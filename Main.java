@@ -7,19 +7,19 @@ public class Main {
         // Create people
         Person s1 = new Student("Mico", 14, 8);
         Person s2 = new Student("Faith", 15, 9);
+        Person s3 = new Student("Mutesi" , 19, 2);
+        Person s4 = new Student("Diana" , 20, 3);
         Person t1 = new Teacher("John", 35, "Mathematics");
         Person t2 = new Teacher("Sarah", 30, "Science");
 
         // Store in array
-        Person[] people = {s1, s2, t1, t2};
+        Person[] people = {s1, s2,s3,s4,t1, t2};
 
         // Display roles
         System.out.println("Roles:");
         for (Person p : people) {
             p.displayRole();
-        }
-
-        // Create courses
+        }// Create courses
         Course math = new MathCourse();
         Course science = new ScienceCourse();
 
